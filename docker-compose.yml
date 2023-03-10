@@ -1,0 +1,45 @@
+version: '2'
+
+
+services:
+  logs1:
+    build:
+      context: .
+      dockerfile: Dockerapi
+    container_name: api2
+    ports:
+      - "35002:8080"
+  logs2:
+    build:
+      context: .
+      dockerfile: Dockerapi
+    container_name: api3
+    ports:
+      - "35003:8080"
+  logs3:
+    build:
+      context: .
+      dockerfile: Dockerapi
+    container_name: api
+    ports:
+      - "35001:8080"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web
+    ports:
+      - "4567:6000"
+  db:
+    image: mongo:3.6.1
+    container_name: db
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - 27017:27017
+    command: mongod
+
+volumes:
+  mongodb:
+  mongodb_config:
