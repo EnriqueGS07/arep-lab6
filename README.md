@@ -1,13 +1,5 @@
-# TALLER DE DE MODULARIZACIÓN CON VIRTUALIZACIÓN E INTRODUCCIÓN A DOCKER Y A AWS
-- El taller consiste en crear una aplicación web pequeña usando el micro-framework de Spark java (http://sparkjava.com/). Una vez tengamos esta aplicación procederemos a construir un container para docker para la aplicación y los desplegaremos y configuraremos en nuestra máquina local. Luego, cerremos un repositorio en DockerHub y subiremos la imagen al repositorio. Finalmente, crearemos una máquina virtual de en AWS, instalaremos Docker , y desplegaremos el contenedor que acabamos de crear.
+# TALLER DE TRABAJO INDIVIDUAL EN PATRONES ARQUITECTURALES
 
-## Iniciando
-
-
-### Construcción:
-- Amazon web services: EC2
-- Spring-boot y spark
-- [Maven](https://maven.apache.org/) - Dependency Management
 
 ### Arquitectura de la aplicación
 ![image(https://user-images.githubusercontent.com/98104282/224523001-bc4bed36-14c2-40f2-9136-3a0771faf0bd.png)
@@ -19,6 +11,9 @@ LogService es un servicio REST que recibe una cadena, la almacena en la base de 
 
 
 ### Construción
+- Amazon web services: EC2
+- Spring-boot y spark
+- [Maven](https://maven.apache.org/) - Dependency Management
 Se crearon 5 instancias de ec2 en amazon web services y las tres intancias del log services  y al balanceador de cargas se les instalo java, luego se subio el codiogo de java que se ibaa correr y se empezo a correr el servicio
 - ![image](https://user-images.githubusercontent.com/98104282/224523652-5d65bdb1-9de3-4d39-bdfa-93de54c5d302.png)
 - ![image](https://user-images.githubusercontent.com/98104282/224523658-125e6645-085d-4c3b-b064-f6151bc150ae.png)
