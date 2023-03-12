@@ -2,7 +2,7 @@
 
 
 ### Arquitectura de la aplicación
-![image(https://user-images.githubusercontent.com/98104282/224523001-bc4bed36-14c2-40f2-9136-3a0771faf0bd.png)
+![image](https://user-images.githubusercontent.com/98104282/224523001-bc4bed36-14c2-40f2-9136-3a0771faf0bd.png)
 
 - El sistema de la figura tiene los siguientes elementos:
 - El servicio MongoDB es una instancia de MongoDB corriendo en una máquina virtual de EC2
